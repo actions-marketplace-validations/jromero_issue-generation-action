@@ -13,8 +13,8 @@ describe('#generateBotComment', function () {
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -51,8 +51,8 @@ __(none)__
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -101,8 +101,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -142,8 +142,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -183,8 +183,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -226,8 +226,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -268,8 +268,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -311,8 +311,8 @@ As you review this RFC please queue up issues to be created using the following 
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
@@ -330,8 +330,8 @@ describe('#extractIssuesFromBotComment', function () {
 
 As you review this RFC please queue up issues to be created using the following commands:
 
-    queue-issue <repo> "<title>" [labels]...
-    unqueue-issue <uid>
+    /queue-issue <repo> "<title>" [labels]...
+    /unqueue-issue <uid>
 
 ### Issues
 
