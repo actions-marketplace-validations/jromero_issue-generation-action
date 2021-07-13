@@ -13,7 +13,15 @@ This solution is broken into two parts:
 
 ### CLI
 
+#### Install
+
+```shell
+npm i -g issues-generation
 ```
+
+#### Usage
+
+```shell
 $ issues-generation --help
 Usage: issues-generation [options] [command]
 
@@ -28,6 +36,8 @@ Commands:
 ```
 
 ### GitHub Actions
+
+#### Usage
 
 ```yaml
 name: Issues Generation
@@ -52,8 +62,8 @@ jobs:
         uses: jromero/issue-generation-action@v1.0.0-beta.2
         id: issues-generation
         with:
-          github-token: ${{ secrets.LEARNING_GITHUB_TOKEN }}
-          bot-username: buildpack-bot
+          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          bot-username: my-bot-account
 
 ```
 
