@@ -14,8 +14,8 @@ This solution is broken into two parts:
 ### CLI
 
 ```
-$ node ./dist/index.js --help
-Usage: index [options] [command]
+$ issues-generation --help
+Usage: issues-generation [options] [command]
 
 Options:
   -h, --help        display help for command
@@ -49,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Issue Generation
-        uses: ./.github/workflows/actions/issues-generation
+        uses: jromero/issue-generation-action@v1.0.0-beta.2
         id: issues-generation
         with:
           github-token: ${{ secrets.LEARNING_GITHUB_TOKEN }}

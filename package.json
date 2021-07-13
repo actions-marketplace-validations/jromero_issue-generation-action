@@ -1,11 +1,10 @@
 {
   "name": "issues-generation",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0-beta.2",
   "description": "An issues generation tool for GitHub pull requests",
   "main": "lib/main.js",
   "bin": {
-    "issues-generation": "./dist/index.js"
+    "issues-generation": "./bin/issues-generation"
   },
   "scripts": {
     "format": "prettier --write src/**/*.ts",
@@ -16,17 +15,18 @@
     "clean": "rm -rf lib/ && rm -rf dist/",
     "build": "tsc -b",
     "prepackage": "npm run clean && npm run build",
-    "package": "npm run prepackage && ncc build lib/commands/index.js --external typescript",
+    "package": "ncc build lib/commands/index.js --external typescript",
     "prepare-for-pr": "npm run format && npm run validate && npm run package"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "/bin"
   ],
   "keywords": [
     "actions"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "Javier Romero",
+  "license": "Apache-2.0",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^5.0.0",
