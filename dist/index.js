@@ -90,17 +90,23 @@ ${errors.map(e => `  * ${e}`).join('\n')}`;
                 }
             }
             core.info(`> Posting bot comment...`);
-            if (botComment && botComment.body !== updatedComment) {
-                core.info(`Updating bot comment:\n${updatedComment}`);
-                yield octokit.rest.issues.updateComment({
-                    owner,
-                    repo,
-                    comment_id: botComment.id,
-                    body: updatedComment
-                });
+            if (botComment) {
+                core.info(`> Found existing bot comment: ${botComment.html_url}`);
+                if (botComment.body === updatedComment) {
+                    core.info(`> Contents are the same, not updating!`);
+                }
+                else {
+                    core.info(`> Updating bot comment:\n${updatedComment}`);
+                    yield octokit.rest.issues.updateComment({
+                        owner,
+                        repo,
+                        comment_id: botComment.id,
+                        body: updatedComment
+                    });
+                }
             }
             else {
-                core.info(`> Posting bot comment:${updatedComment}\n`);
+                core.info(`> Posting bot comment:\n${updatedComment}`);
                 yield octokit.rest.issues.createComment({
                     owner,
                     repo,

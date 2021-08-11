@@ -59,7 +59,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Issue Generation
-        uses: jromero/issue-generation-action@v1.0.0-beta.2
+        uses: jromero/issue-generation-action@v1.0.0-beta.4
         id: issues-generation
         with:
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
